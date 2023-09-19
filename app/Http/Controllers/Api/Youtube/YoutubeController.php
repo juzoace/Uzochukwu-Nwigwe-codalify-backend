@@ -11,26 +11,6 @@ use Illuminate\Http\Request;
 
 class YoutubeController extends Controller
 {
-    // public function show(Request $request, $name)
-    // {
-        
-    //     // Search for a YouTube channel by name
-    //     $channel = YoutubeChannel::where('channel_name', $name)->first();
-
-    //     echo $channel;
-    //     if (!$channel) {
-    //         return response()->json(['message' => 'YouTube channels not found'], 404);
-           
-    //     }
-
-    //     // Retrieve associated videos
-    //     $videos = $channel->videos;
-
-    //     return response()->json([
-    //         'channel' => $channel,
-    //         'videos' => $videos,
-    //     ]);
-    // }
 
     public function show(Request $request, $name)
     {
@@ -59,12 +39,6 @@ class YoutubeController extends Controller
         }
        
     }
-    // In the corrected code, I removed the echo $channel; line, which was sending a raw response to the browser. By removing that line, the method should return the JSON response correctly to your front-end.
-    
-    
-    
-    
-    
     
 
 
